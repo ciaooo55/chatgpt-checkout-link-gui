@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.log
+.env
+.env.*
+session.json
+session-*.json
+token.txt
+*.token
+
