@@ -1,5 +1,18 @@
 # ChatGPT Plus 支付长链接生成器
 
+## 项目速览
+
+| 项目 | 说明 |
+| --- | --- |
+| 中文名称 | ChatGPT Plus 支付链接生成器 |
+| GitHub 仓库名 | `chatgpt-checkout-link-gui` |
+| 名称状态 | 保持当前名称，本轮没有改名 |
+| 主要用途 | 在本地创建 ChatGPT Checkout，并取得 Stripe 托管支付页面长链接 |
+| 运行方式 | Windows 双击 `run_checkout_gui.cmd`，无需安装第三方 Python 包 |
+| 数据处理 | Token 或 Session JSON 只在当前进程内存中使用，不写入配置文件 |
+
+> 这是个人本地工具，不是 OpenAI 或 Stripe 官方项目。它不能绕过地区、身份、付款方式、优惠资格或风控限制，最终价格与续费规则必须在官方结账页面确认。
+
 这是一个本地 Tkinter GUI。它接收 Access Token 或完整 Session JSON，先通过 ChatGPT Checkout 创建会话，再通过 Stripe 官方 `payment_pages/init` 接口取得真正的 Hosted 长链接。
 
 > 非 OpenAI 或 Stripe 官方项目。本工具不会绕过地区、身份、促销、支付方式或风险控制限制。
